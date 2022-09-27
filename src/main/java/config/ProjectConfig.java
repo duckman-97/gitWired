@@ -1,30 +1,17 @@
 package config;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-import com.ezdesign.Ctxtst.Parrot;
-import com.ezdesign.Ctxtst.Person;
+import beans.Parrot;
+import beans.Person;
+
 
 @Configuration
+@ComponentScan(basePackages = "beans")
 public class ProjectConfig {
 	
-	@Bean
-	public Parrot parrot() {
-		Parrot p = new Parrot();
-		p.setName("Koko");
-		return p;
-				
-		
-	}
-	
-	
-	@Bean
-	public Person person() {
-		Person p = new Person();
-		p.setName("Elia");
-		return p;
-		
-	}
+
 
 }
