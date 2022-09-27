@@ -20,9 +20,11 @@ public class ProjectConfig {
 	
 	
 	@Bean
+	
 	public Person person() {
 		Person p = new Person();
 		p.setName("Elia");
+		p.setParrot(parrot());
 		return p;
 		
 	}

@@ -2,6 +2,14 @@ package com.ezdesign.Ctxtst;
 
 public class Parrot {
 	private String name;
+	
+	public Parrot() {
+		System.out.println("Parrot Created");
+		
+	}
+	
+	
+	
 
 	public String getName() {
 		return name;
